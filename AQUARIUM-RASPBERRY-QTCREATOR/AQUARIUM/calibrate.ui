@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>calibrate</class>
+ <widget class="QMainWindow" name="calibrate">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>591</width>
+    <height>369</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>PH CALIBRATION</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(245, 235, 191);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="btnCStart">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>190</y>
+      <width>241</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(243, 157, 40);</string>
+    </property>
+    <property name="text">
+     <string>START CALIBRATION</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnCStop">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>260</y>
+      <width>241</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(243, 157, 40);</string>
+    </property>
+    <property name="text">
+     <string>STOP CALIBRATION</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>60</y>
+      <width>241</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QRadioButton" name="selPh9">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>141</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>PH 9 SOLUTION</string>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="selPh7">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>141</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>PH 7 SOLUTION</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="selPh4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>221</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>PH 4 SOLUTION (not used)</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="lblCurrPh">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>141</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Courier New</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>PH : 7.00</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>591</width>
+     <height>27</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btnCStart</sender>
+   <signal>clicked()</signal>
+   <receiver>calibrate</receiver>
+   <slot>startCalibration()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>157</x>
+     <y>194</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>178</x>
+     <y>186</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnCStop</sender>
+   <signal>clicked()</signal>
+   <receiver>calibrate</receiver>
+   <slot>stopCalibration()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>195</x>
+     <y>242</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>177</x>
+     <y>186</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>startCalibration()</slot>
+  <slot>stopCalibration()</slot>
+ </slots>
+</ui>

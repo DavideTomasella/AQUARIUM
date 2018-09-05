@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AQUARIUM</string>
+    <string name="title_home">Home</string>
+    <string name="title_misure">Measurements</string>
+    <string name="title_errori">Notifications</string>
+    <string name="urlPre1">http://172.16.9.10/</string>
+    <string name="urlPre2">http://188.125.109.244/</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="str_button">Go To Website</string>
+    <string name="str_powered">Powered By Davide Tomasella</string>
+    <string name="str_description">Our school Aquarium can be monitored in a very simple way through this app, which allows you to control the latest Mesaurements and Notifications, when you are at home or on holiday.</string>
+</resources>

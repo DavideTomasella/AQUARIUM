@@ -1,0 +1,30 @@
+#ifndef GRAPHICUPDATER_H
+#define GRAPHICUPDATER_H
+
+#include <QObject>
+#include <QLCDNumber>
+#include <QLabel>
+#include <QProgressBar>
+#include <QPushButton>
+
+class graphicUpdater : public QObject
+{
+    Q_OBJECT
+public:
+    explicit graphicUpdater(QObject *parent = 0);
+    void updateHour(QLCDNumber *lcdHOUR);
+    void updateDate(QLabel *lblDATE);
+    void updateSTATUS(QPushButton *btnSTATUS);
+    void updateTemp(QProgressBar *barTEMP, QLabel *lblTEMP);
+    void updatePh(QProgressBar *barPH, QLabel *lblPH);
+    void updateLev(QProgressBar *barLEV, QLabel *lblLEV);
+    void updateLig(QProgressBar *barLIG);
+    void updateFan(QPushButton *btnFAN);
+    void updateCo2(QPushButton *btnCO2);
+    void updatePot(QPushButton *btnPOT);
+    void updateRISE(QLCDNumber *lcdRISE);
+    void updateSET(QLCDNumber *lcdSET);
+
+};
+
+#endif // GRAPHICUPDATER_H

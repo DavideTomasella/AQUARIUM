@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/coordinatorLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/txtTime1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="0dp"
+                android:layout_toEndOf="@+id/img"
+                android:fontFamily="@font/arbutus_slab"
+                android:text="ora"
+                android:textColor="@color/colorHomeDark"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <TextView
+                android:id="@+id/txtErr"
+                android:layout_width="97dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/txtPot"
+                android:layout_alignBottom="@+id/txtPot"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/delius"
+                android:text="temp"
+                android:textColor="@color/colorHomeDark"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtPh"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/txtErr"
+                android:layout_alignBottom="@+id/txtErr"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toStartOf="@+id/txtLig"
+                android:fontFamily="@font/delius"
+                android:text="ph"
+                android:textColor="@color/colorHomeDark"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtLig"
+                android:layout_width="117dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/txtTime1"
+                android:layout_below="@+id/txtTime1"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/delius"
+                android:text="lights"
+                android:textColor="@color/colorHomeDark"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtFan"
+                android:layout_width="77dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/txtLig"
+                android:layout_alignBottom="@+id/txtLig"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/txtLig"
+                android:fontFamily="@font/delius"
+                android:text="fan"
+                android:textColor="@color/colorHomeDark"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+            <TextView
+                android:id="@+id/txtLev"
+                android:layout_width="97dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/txtTime1"
+                android:layout_below="@+id/txtErr"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/delius"
+                android:text="level"
+                android:textColor="@color/colorHomeDark"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtCo2"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/txtErr"
+                android:layout_alignBottom="@+id/txtErr"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toStartOf="@+id/txtErr"
+                android:fontFamily="@font/delius"
+                android:text="co2"
+                android:textColor="@color/colorHomeDark"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtPot"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/txtPh"
+                android:layout_below="@+id/txtTime1"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/delius"
+                android:text="potassium"
+                android:textColor="@color/colorHomeDark"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+
+</RelativeLayout>
